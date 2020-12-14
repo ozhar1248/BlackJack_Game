@@ -1,6 +1,5 @@
 import random
 import art
-from replit import clear
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
@@ -105,10 +104,8 @@ def show_statistics(chances) :
     print(f"{score}\t\t\t\t\t\t{cal_expectancy(chances[score],bet)}")
 
 while input("Do you want to play a game of Blackjack? Type 'y' for yes: ") == "y":
-  clear()
   startBlackJack(22)
 
 if input("Do you want statistics about Blackjack? Type 'y' for yes: ") == "y":
   table = make_statistics()
-  clear()
   show_statistics(table)
